@@ -1,0 +1,95 @@
+<head>
+	<title>Beyond Breathalyzers: Towards Pre-Driving Sobriety Testing with a Driver Monitoring Camera</title>
+	<meta property="og:title" content="Beyond Breathalyzers">
+        <meta property="og:description" content="Towards Pre-Driving Sobriety Testing with a Driver Monitoring Camera">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function toggle(id) {
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+				e.style.display = 'none';
+			else
+				e.style.display = 'block';
+		}
+	</script>
+</head>
+<div class="header" id="top">
+	<h1>Beyond Breathalyzers: Towards Pre-Driving Sobriety Testing with a Driver Monitoring Camera</h1>
+	<table class="authors">
+		<tbody>
+			<tr>
+				<td>
+					<h4>
+						<a href="https://scholar.google.com/citations?hl=en&user=f3aij5UAAAAJ" class="nobreak">Simon Stent</a>,&ensp;
+						<a href="https://www.johngideon.me/" class="nobreak">John Gideon</a>,&ensp;
+						<a href="https://scholar.google.com/citations?hl=en&user=GmwJ_MAAAAAJ" class="nobreak">Kimimasa Tamura</a>,&ensp;
+						<a href="https://scholar.google.com/citations?hl=en&user=OBlaTvoAAAAJ" class="nobreak">Avinash Balachandran</a>,&ensp;
+						<a href="https://scholar.google.com/citations?user=aQeTAr4AAAAJ" class="nobreak">Guy Rosman</a><br/>
+						<span class="authors-affiliation">Toyota Research Institute</span><br/>
+                                                <span class="publication-venue">Presented at the 36th IEEE Intelligent Vehicles Symposium (IV), 2025</span>
+					</h4>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="links">
+		<a class="btn" href="IV25stent.pdf"><i class="fa">&#xf1c1;</i>&ensp;Paper</a><a class="btn" href="IV25stent_poster.pdf"><i class="fa">&#xf03e;</i>&ensp;Poster</a><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScouxH8yrI5gPifoJYOUx8q0_PIgGXbwwXkH7jTHvMdIUfPog/viewform"><i class="fa fa-database"></i>&ensp;Dataset</a><a class="btn" href="https://github.com/ToyotaResearchInstitute/IV25-beyond-breathalysers"><i class="fa fa-github"></i>&ensp;Code</a>
+	</div>
+</div>
+<div class="content">
+	<div class="hr"></div>
+	<div class="figure" style="height: 320px; background-image: url(figures/overview.png);"></div>
+	<div>
+		<h2>Abstract</h2>
+		<p class="abstract">
+			Field sobriety tests and breathalyzers are commonly used to prevent alcohol-impaired driving, but are expensive and time-consuming to administer. We propose a set of sobriety tests which, in contrast, can feasibly be automated and deployed to modern vehicles equipped with a driver monitoring camera. Our tests are inspired by research on the physiological effects of alcohol, with particular focus on eye movements and gaze behavior. We run an exploratory in-lab study with N=51 subjects (20 alcohol-impaired, 31 control), and train a variety of models to detect alcohol impairment. We find that, using only 10 seconds of observations of the driver, one of the four proposed tests performs comparably to existing non-breathalyzer field sobriety tests.
+		</p>
+	</div>
+	<div class="hr"></div>
+	<div>
+		<h2>Supplementary Video</h2>
+		<div class="section" style=" text-align: left">
+			<div class="body">
+				<div class="video-container" style="position: relative; padding-top: 2%; margin: 0pt auto; text-align: center;">
+					<iframe width="960" height="540" src="figures/supplementary.mp4" title="Supplementary video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="hr"></div>
+	<div style="padding-bottom: 64px; text-align: left;">
+		<h2>Related work</h2>
+		<p>
+			Below are some links to related projects which helped to inspire ours:
+			<ul>
+				<li><a href="https://ubicomplab.cs.washington.edu/publications/dui/">Drunk User Interfaces: Determining Blood Alcohol Level through Everyday Smartphone Tasks</a> (CHI 2018)</li>
+				<li><a href="https://github.com/im-ethz/CHI-2023-paper-Leveraging-driver-vehicle-and-environment-interaction">Machine learning using driver monitoring cameras to detect drunk driving</a> (CHI 2023)</li>
+			</ul>
+		</p>
+	</div>
+
+<div class="hr"></div>
+	<div style="padding-bottom: 64px; text-align: center;">
+		<h2>Citation</h2>
+		<p>
+			Please cite the paper as follows:
+		</p>
+		<div id="bibtex-text" class="bibtexsection" onClick="window.getSelection().selectAllChildren(document.getElementById('bibtex-text'));">
+@inproceedings{stent2025iv,
+  title = {Beyond Breathalyzers: Towards Pre-Driving Sobriety Testing with a Driver Monitoring Camera},
+  booktitle = {Proceedings of the 36th IEEE Intelligent Vehicles Symoposium (IV)},
+  author = {Stent, Simon and Gideon, John and Tamura, Kimimasa and Balachandran, Avinash and Rosman, Guy},
+  year = {2025}
+} </div>
+	</div>
+</div>
+
+<footer>
+<a href="#top"><i class="fa fa-arrow-up"></i><br/>Return to top</a>
+<div style="padding-top: 48px;">
+	<span>Website based on <a href="https://www.tdmpc2.com/">TD-MPC2</a>.</span>
+</div>
+</footer>
