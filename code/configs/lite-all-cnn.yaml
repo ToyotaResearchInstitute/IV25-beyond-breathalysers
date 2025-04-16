@@ -1,0 +1,38 @@
+name: "lite-all-cnn"
+data:
+  path: "~/data/IV25alcohol/Participants/"
+  n_samples: 32
+  normalize: False
+  single_eye: True
+  window_obs: 512
+  resample_rate: 60
+  data_keys: ['r_gpd_x','l_gpd_x','r_gpd_y','l_gpd_y','r_gpd_v','l_gpd_v','event']
+  
+train:
+  exp_to_use: ["fixed_gaze", "gaze_tracking", "silent_reading", "choice_reaction"]
+  epochs: 100
+  batch_size: 17
+  learning_rate: 0.01
+  timing_jitter: 30
+  scheduler:
+    use: True
+    step_size: 10
+    gamma: 0.33
+  drunkenflip: False
+  soberflip: True
+  random_seed: 42
+
+val:
+  exp_to_use: ["fixed_gaze", "gaze_tracking", "silent_reading", "choice_reaction"]
+  drunkenflip: False
+  soberflip: False
+
+test:
+  exp_to_use: ["fixed_gaze", "gaze_tracking", "silent_reading", "choice_reaction"]
+  sample_gap: 128
+
+results:
+  path: "~/wandb/"
+  
+model:
+  name: "CNN"

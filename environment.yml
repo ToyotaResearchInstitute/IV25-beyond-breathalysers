@@ -1,0 +1,23 @@
+name: IV25
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - jupyter
+  - matplotlib
+  - more-itertools
+  - numpy
+  - pandas
+  - pip
+  - python=3.11
+  - scikit-learn
+  - scipy
+  - simplejson
+  - pip:
+      - setuptools
+      - -e . --config-settings editable_mode=compat  # editable_mode=compat insure adding the package to sys.path
+      - nbformat
+      - wandb
+      - pyarrow
+      - python-box
+      - momentfm
